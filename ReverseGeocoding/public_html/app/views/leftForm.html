@@ -1,0 +1,35 @@
+<div class="contentContainer">
+    <form class="form-horizontal" name="reverseGeocodingForm"  ng-submit="submit()">
+        <fieldset>
+
+            <legend>Coordinates to Reverse Geocode</legend>
+
+            <!-- Latitude input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="LatitudeInput">Latitude</label>  
+                <div class="col-md-6">
+                    <input id="LatitudeInput" name="latitude" type="text" class="form-control input-md" ng-model="position.latitude" pattern="^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$" maxlength="10" required>
+                </div>
+            </div>
+
+            <!-- Longitude input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="LongitudeInput">Longitude</label>  
+                <div class="col-md-6">
+                    <input id="LongitudeInput" name="longitude" type="text" class="form-control input-md" ng-model="position.longitude" pattern="^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$" maxlength="10" required>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <div class="col-md-4 col-md-push-2">
+                    <input id="submit" type="submit" name="submitForm" class="btn btn-primary btn-submit" value="Submit">
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <!-- Status message from reverse geocoding event -->
+    <p>{{statusMessage}}</p>
+</div>

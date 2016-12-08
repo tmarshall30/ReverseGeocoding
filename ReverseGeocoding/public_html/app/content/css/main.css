@@ -1,0 +1,74 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+}
+
+body {
+    background-color:#556270;
+    color:white;
+
+}
+
+#map_canvas .ng-scope,
+.container-fluid {
+    height:100%;
+
+}
+
+#map_canvas {
+    height:60%;
+
+}
+
+#mapElement {
+    height:100%;
+    width:100%;
+
+}
+
+.contentContainer {
+    position: relative;
+    top:50px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 5px;
+    padding:20px;
+
+}
+
+.btn-submit:focus,
+.btn-submit:active,
+.btn-submit {
+    background-color: rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.5);
+    color: white;
+    outline:none;
+
+}
+
+.btn-submit:hover {
+    background-color: #556270;
+
+}
+
+legend {
+    color:white;
+
+}
+
+.markerInfo {
+    color:black;
+    width:300px;
+    
+}
+
+.markerInfo table {
+    width:100%;
+}
+
+.markerInfo table td:first-child {
+    width:40%;
+    
+}
